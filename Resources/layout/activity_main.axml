@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/main_container">
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="280dp"
+		android:scaleType="fitCenter"
+		android:src="@drawable/mainbg"
+		android:layout_marginBottom="30dp"
+		android:id="@+id/img_bg" /> 
+	<TextView
+		android:text="Проведи время с пользой"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:layout_height="30dp"
+		android:textColor="?android:attr/textColorSecondary" 
+		android:layout_below="@+id/img_bg"
+		android:id="@+id/textlogin"/>
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:padding="50dp"
+		android:layout_below="@+id/textlogin"
+		android:id="@+id/main_form">
+		<Button
+			android:text="Войти"
+			android:layout_width="fill_parent"
+			android:layout_height="45dp"
+			android:layout_marginTop="20dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@color/colorMainBlue"
+			android:textColor="?android:attr/textColorPrimaryInverse"
+			android:id="@+id/btn_auth_form" />
+		<Button
+			android:text="Создать аккаунт"
+			android:layout_width="fill_parent"
+			android:layout_height="45dp"
+			android:layout_marginTop="20dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@color/colorMainLightBlue"
+			android:textColor="?android:attr/textColorPrimary"
+			android:layout_below="@+id/btn_auth_form"
+			android:id="@+id/btn_reg_form" />
+        <Button
+            android:text="Зарегестрировать контейнер"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@color/colorMainLightBlue"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_below="@+id/btn_reg_form"
+            android:id="@+id/btn_box_form" />
+	</RelativeLayout>
+</RelativeLayout>
