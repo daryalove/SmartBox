@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageButton
+		android:src="@drawable/btnBack"
+		android:layout_width="50dp" 
+        android:layout_height="50dp" 
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="40dp"		
+		android:background="@android:color/transparent"
+		android:id="@+id/btn_back_a" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите имя контейнера"
+        android:id = "@+id/text1"
+    />
+    <AutoCompleteTextView android:id="@+id/box_name1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/box_selection"
+        android:background="@color/colorMainBlue"
+	    android:textColor="@android:color/white"
+        android:text="Выбрать" 
+    />
+    <Button
+				android:text="Зарегистрировать контейнер"
+				android:textAppearance="?android:attr/textAppearanceSmall" 
+				
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorMainBlue"			 
+				android:layout_below="@+id/box_selection"
+				android:id="@+id/btn_box_registr" /> 
+    <ProgressBar
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/preloader"
+	/>
+</LinearLayout>
